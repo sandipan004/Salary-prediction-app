@@ -1,0 +1,11 @@
+# Don't upload virtual environment
+.venv/
+venv/
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Streamlit logs
+.streamlit/
+
