@@ -1,7 +1,7 @@
 # Salary-prediction-app
 
 
-# 💼 Employee Salary Prediction App (Machine Learning + Streamlit)
+## 💼 Employee Salary Prediction App (Machine Learning + Streamlit)
 
 This project predicts employee salaries using a Machine Learning Ensemble Model 
 (Random Forest + Gradient Boosting + Voting Regressor).  
