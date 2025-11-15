@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 import joblib
 
 # Load data
-df = pd.read_excel("data/Employees.xlsx")
+df = pd.read_excel("Employees.xlsx")
 
 # Select valid features
 features = [
@@ -38,3 +38,4 @@ joblib.dump(scaler, "scaler.pkl")
 joblib.dump(X.columns.tolist(), "features.pkl")
 
 print("Model Training Completed.")
+
