@@ -4,12 +4,12 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load model, scaler, features
-model = joblib.load("model/model.pkl")
-scaler = joblib.load("model/scaler.pkl")
-feature_names = joblib.load("model/features.pkl")
+model = joblib.load("model.pkl")
+scaler = joblib.load("scaler.pkl")
+feature_names = joblib.load("features.pkl")
 
 # Load full dataset for charts
-df_raw = pd.read_excel("data/Employees.xlsx")
+df_raw = pd.read_excel("Employees.xlsx")
 
 st.title("💼 Salary Prediction Web App")
 st.write("Predict salaries using machine learning + visualize trends.")
@@ -80,3 +80,4 @@ fig2, ax2 = plt.subplots(figsize=(10, 5))
 ax2.bar(top20.index, top20["Annual Salary"])
 ax2.set_title("Top 20 Actual Salaries")
 st.pyplot(fig2)
+
